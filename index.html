@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0A0A0A">
+<title>Ademicon — O consórcio que mais cresce no Brasil</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lato:wght@400;600&family=Open+Sans:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/styles.css?v=20260910d">
+</head>
+<body>
+
+<!-- ============================ HEADER ============================ -->
+<header class="site-header" id="siteHeader">
+  <div class="header-inner">
+    <a class="logo" href="#" aria-label="Ademicon">
+      <img src="assets/img/logo-ademicon.svg" alt="Ademicon — consórcio e investimento" width="148" height="32">
+    </a>
+
+    <nav class="nav-desktop" aria-label="Principal">
+      <a class="nav-link" href="#">Produtos <svg class="ic ic-12" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></a>
+      <a class="nav-link" href="#">Parcerias</a>
+      <a class="nav-link" href="#">A Ademicon <svg class="ic ic-12" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></a>
+      <a class="nav-link" href="#">Sorteios e Resultados</a>
+      <a class="nav-link" href="#">Blog</a>
+      <a class="nav-link" href="#">Área do Cliente</a>
+    </nav>
+
+    <a class="btn btn-primary btn-sm nav-cta" href="#">Procure um Consultor</a>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="navMobile">
+      <svg class="ic ic-24" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+    </button>
+  </div>
+
+  <div class="nav-mobile" id="navMobile" hidden>
+    <a href="#">Produtos</a>
+    <a href="#">Parcerias</a>
+    <a href="#">A Ademicon</a>
+    <a href="#">Sorteios e Resultados</a>
+    <a href="#">Blog</a>
+    <a href="#">Área do Cliente</a>
+    <a class="btn btn-primary btn-block" href="#">Procure um Consultor</a>
+  </div>
+</header>
+
+<!-- ============================ HERO ============================ -->
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-copy">
+      <h1>O consórcio que mais cresce no Brasil</h1>
+      <p>A maior administradora independente de consórcio do Brasil! Conquiste seu imóvel, veículo ou novos projetos de forma planejada, inteligente e <strong>sem juros</strong>.</p>
+    </div>
+
+    <div class="hero-media">
+      <img class="hero-img" src="assets/img/hero.png" alt="" aria-hidden="true">
+    </div>
+
+    <div class="sim-card" id="simCard">
+        <h2 class="sim-card-title">Simule seu <span>consórcio</span></h2>
+
+        <div class="sim-card-body">
+          <div class="field">
+            <label class="field-label" for="heroProduto">Produto</label>
+            <div class="input-wrapper">
+              <svg class="ic ic-16" viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M9 22V12h6v10"/></svg>
+              <select id="heroProduto">
+                <option value="imovel">Imóvel</option>
+                <option value="veiculo">Veículo</option>
+                <option value="servico">Serviço</option>
+              </select>
+              <svg class="ic ic-16" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
+            </div>
+          </div>
+
+          <div class="field">
+            <span class="field-label">Selecione</span>
+            <div class="segmented" id="heroSegmented">
+              <button type="button" class="seg-btn is-active" data-mode="credito">Crédito</button>
+              <button type="button" class="seg-btn" data-mode="parcela">Parcela</button>
+            </div>
+          </div>
+
+          <div class="field field-slider">
+            <label class="field-label" for="heroValorInput" id="heroValorLabel">Valor do Crédito</label>
+            <div class="input-wrapper">
+              <input type="text" id="heroValorInput" inputmode="numeric" value="R$ 676.721,15">
+            </div>
+            <input class="range" type="range" id="heroRange" min="80000" max="1273442" step="1" value="676721">
+            <div class="range-legend">
+              <span id="heroMin">R$ 80.000,00</span>
+              <span id="heroMax">R$ 1.273.442,29</span>
+            </div>
+          </div>
+        </div>
+
+      <button type="button" class="btn btn-primary btn-block btn-lg">Simule seu consórcio</button>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== TIPOS DE CONSÓRCIO ==================== -->
+<section class="section section-gray" id="produtos">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">tipos de consórcio</p>
+      <h2 class="section-title">O que você deseja conquistar?</h2>
+      <p class="section-desc">Descubra os diferentes tipos de consórcios que oferecemos. Cada modelo é projetado para atender às suas necessidades específicas, desde a aquisição de imóveis até veículos e serviços.</p>
+    </div>
+
+    <div class="hscroll hscroll-bleed" data-hscroll>
+      <article class="product-card">
+        <div class="product-card-img"><img src="assets/img/card-veiculos.png" alt="Veículos"></div>
+        <div class="product-card-text">
+          <h3>Veículos</h3>
+          <p>Carros novos, seminovos e usados à vista e sem juros bancários.</p>
+          <span class="card-cta">Simular agora <svg class="ic ic-16" viewBox="0 0 24 24"><path d="M18 8l4 4-4 4"/><path d="M2 12h20"/></svg></span>
+        </div>
+      </article>
+      <article class="product-card">
+        <div class="product-card-img"><img src="assets/img/card-imoveis.png" alt="Imóveis"></div>
+        <div class="product-card-text">
+          <h3>Imóveis</h3>
+          <p>Planeje sua casa própria, terreno, reforma ou construção comercial.</p>
+          <span class="card-cta">Simular agora <svg class="ic ic-16" viewBox="0 0 24 24"><path d="M18 8l4 4-4 4"/><path d="M2 12h20"/></svg></span>
+        </div>
+      </article>
+      <article class="product-card">
+        <div class="product-card-img"><img src="assets/img/card-servicos.png" alt="Serviços"></div>
+        <div class="product-card-text">
+          <h3>Serviços</h3>
+          <p>Casamentos, cirurgias plásticas, estudos e viagens planejadas.</p>
+          <span class="card-cta">Simular agora <svg class="ic ic-16" viewBox="0 0 24 24"><path d="M18 8l4 4-4 4"/><path d="M2 12h20"/></svg></span>
+        </div>
+      </article>
+      <article class="product-card">
+        <div class="product-card-img"><img src="assets/img/card-bens-moveis.png" alt="Bens Móveis"></div>
+        <div class="product-card-text">
+          <h3>Bens Móveis</h3>
+          <p>Equipamentos para facilitar seu dia a dia com contratação planejada.</p>
+          <span class="card-cta">Simular agora <svg class="ic ic-16" viewBox="0 0 24 24"><path d="M18 8l4 4-4 4"/><path d="M2 12h20"/></svg></span>
+        </div>
+      </article>
+      <article class="product-card">
+        <div class="product-card-img"><img src="assets/img/card-agro.png" alt="Agro"></div>
+        <div class="product-card-text">
+          <h3>Agro</h3>
+          <p>Maquinário pesado para aumentar sua produtividade no campo.</p>
+          <span class="card-cta">Simular agora <svg class="ic ic-16" viewBox="0 0 24 24"><path d="M18 8l4 4-4 4"/><path d="M2 12h20"/></svg></span>
+        </div>
+      </article>
+      <article class="product-card">
+        <div class="product-card-img"><img src="assets/img/card-aposentadoria.png" alt="Aposentadoria Imobiliaria"></div>
+        <div class="product-card-text">
+          <h3>Aposentadoria Imobiliaria</h3>
+          <p>Construa seu patrimônio para viver de renda.</p>
+          <span class="card-cta">Simular agora <svg class="ic ic-16" viewBox="0 0 24 24"><path d="M18 8l4 4-4 4"/><path d="M2 12h20"/></svg></span>
+        </div>
+      </article>
+      <a class="product-card product-card-more" href="#">
+        <svg class="ic ic-24" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" stroke-dasharray="4 3"/><path d="M12 8v8M8 12h8"/></svg>
+        <span>Saiba mais sobre nossos produtos</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== COMO FUNCIONA (slider) ==================== -->
+<section class="section section-white">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">sobre consórcios</p>
+      <h2 class="section-title">Como funciona o consórcio</h2>
+      <p class="section-desc">Consórcio é uma forma segura e sem juros de você conseguir o crédito que precisa. Você se junta a outras pessoas, paga parcelas mensais e aguarda sua vez de ser contemplado para receber o dinheiro.</p>
+    </div>
+
+    <div class="steps" id="steps">
+      <div class="steps-stage">
+        <article class="step is-active" data-step="0">
+          <div class="step-text">
+            <span class="step-badge">1</span>
+            <h3>Solicite o crédito que você precisa</h3>
+            <p>Escolhe o valor de crédito que precisa e cadastre-se. A partir disso você faz parte de um grupo de pessoas buscando um mesmo objetivo.</p>
+          </div>
+          <div class="step-img"><iframe class="step-video" title="Etapa 1" data-src="videos/passo-1.html" loading="lazy" frameborder="0" scrolling="no"></iframe><img class="step-fallback" src="assets/img/passo-1.png" alt=""></div>
+        </article>
+        <article class="step" data-step="1">
+          <div class="step-text">
+            <span class="step-badge">2</span>
+            <h3>Pague as parcelas mensais</h3>
+            <p>Todo mês, você paga sua parcela. Não há surpresas, o valor é fixo e sem juros. Enquanto isso, todos os outros participantes também pagam suas parcelas.</p>
+          </div>
+          <div class="step-img"><iframe class="step-video" title="Etapa 2" data-src="videos/passo-2.html" loading="lazy" frameborder="0" scrolling="no"></iframe><img class="step-fallback" src="assets/img/passo-2.png" alt=""></div>
+        </article>
+        <article class="step" data-step="2">
+          <div class="step-text">
+            <span class="step-badge">3</span>
+            <h3>Aguarde ser contemplado</h3>
+            <p>A cada mês uma pessoa do grupo é sorteada para receber o crédito. Quando chegar sua vez, você recebe o crédito para comprar o que precisa.</p>
+          </div>
+          <div class="step-img"><iframe class="step-video" title="Etapa 3" data-src="videos/passo-3.html" loading="lazy" frameborder="0" scrolling="no"></iframe><img class="step-fallback" src="assets/img/passo-3.png" alt=""></div>
+        </article>
+      </div>
+
+      <div class="steps-tabs" role="tablist">
+        <button class="step-tab is-active" role="tab" data-goto="0">
+          <span class="step-dash"><i></i></span>
+          <span class="step-tab-label"><b>1</b>. Crédito</span>
+        </button>
+        <button class="step-tab" role="tab" data-goto="1">
+          <span class="step-dash"><i></i></span>
+          <span class="step-tab-label"><b>2</b>. Parcelas</span>
+        </button>
+        <button class="step-tab" role="tab" data-goto="2">
+          <span class="step-dash"><i></i></span>
+          <span class="step-tab-label"><b>3</b>. Contemplação</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== LANCES ==================== -->
+<section class="section section-white">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">lances</p>
+      <h2 class="section-title">Receba seu crédito mais cedo!</h2>
+      <p class="section-desc">Não quer esperar pelo sorteio? O lance é uma forma de antecipar sua contemplação. Funciona como um leilão: quanto maior a oferta, maior a chance de ser contemplado na assembleia. E você escolhe a modalidade que cabe no seu bolso.</p>
+    </div>
+
+    <div class="lances" id="lances">
+      <div class="pill-selector" data-hscroll>
+        <button class="pill is-active" data-lance="0">Lance Livre</button>
+        <button class="pill" data-lance="1">Lance Fixo</button>
+        <button class="pill" data-lance="2">Lance Fidelidade</button>
+        <button class="pill" data-lance="3">Lance Híbrido</button>
+        <button class="pill" data-lance="4">Lance Limitado</button>
+        <button class="pill" data-lance="5">Lance FIPE</button>
+      </div>
+
+      <div class="lance-stage">
+        <article class="lance is-active" data-lance="0">
+          <div class="lance-img"><img src="assets/img/lance-livre.png" alt=""></div>
+          <div class="lance-text">
+            <div class="badges"><span class="badge">Imóveis</span><span class="badge">Veículos</span><span class="badge">Serviços</span></div>
+            <h3>Lance Livre</h3>
+            <div class="lance-cols">
+              <p>Ideal para quem tem dinheiro guardado e quer usar essa reserva para ser contemplado logo, sem depender do sorteio e sem nenhum limite de valor ao ofertar.</p>
+              <p>Você adianta quantas parcelas quiser, de uma vez. Na assembleia, quem adianta mais é contemplado, e as parcelas adiantadas somem do seu plano, sem custo extra.</p>
+            </div>
+            <a class="link-arrow" href="#">Saiba mais <svg class="ic ic-24" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+          </div>
+        </article>
+
+        <article class="lance" data-lance="1">
+          <div class="lance-img"><img src="assets/img/lance-fixo.png" alt=""></div>
+          <div class="lance-text">
+            <div class="badges"><span class="badge">Imóveis</span><span class="badge">Veículos</span><span class="badge">Serviços</span></div>
+            <h3>Lance Fixo</h3>
+            <div class="lance-cols">
+              <p>Ideal para quem prefere previsibilidade e quer saber desde a contratação exatamente quanto vai precisar juntar para dar o lance, sem surpresa no caminho.</p>
+              <p>O grupo define quantas parcelas se adianta, e o valor é o mesmo para todos. Se mais de uma pessoa ofertar na mesma assembleia, a contemplação sai por sorteio.</p>
+            </div>
+            <a class="link-arrow" href="#">Saiba mais <svg class="ic ic-24" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+          </div>
+        </article>
+
+        <article class="lance" data-lance="2">
+          <div class="lance-img"><img src="assets/img/lance-fidelidade.png" alt=""></div>
+          <div class="lance-text">
+            <div class="badges"><span class="badge">Veículos</span></div>
+            <h3>Lance Fidelidade</h3>
+            <div class="lance-cols">
+              <p>Ideal para quem está no grupo há mais tempo, manteve todas as parcelas em dia e quer transformar essa constância em uma vantagem real na hora da disputa.</p>
+              <p>Quanto mais tempo de grupo, mais parcelas você pode adiantar. Como só participa quem já conquistou esse direito, você disputa a contemplação com menos gente.</p>
+            </div>
+            <a class="link-arrow" href="#">Saiba mais <svg class="ic ic-24" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+          </div>
+        </article>
+
+        <article class="lance" data-lance="3">
+          <div class="lance-img"><img src="assets/img/lance-hibrido.png" alt=""></div>
+          <div class="lance-text">
+            <div class="badges"><span class="badge">Imóveis</span><span class="badge">Veículos</span><span class="badge">Serviços</span></div>
+            <h3>Lance Híbrido</h3>
+            <div class="lance-cols">
+              <p>Ideal para quem tem uma parte do valor guardado, mas não o suficiente para dar um lance sozinho, e prefere não esperar até conseguir juntar todo o restante.</p>
+              <p>Você paga uma parte do lance do próprio bolso e a outra sai do seu crédito. Entra com menos dinheiro agora e recebe um crédito um pouco menor na contemplação.</p>
+            </div>
+            <a class="link-arrow" href="#">Saiba mais <svg class="ic ic-24" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+          </div>
+        </article>
+
+        <article class="lance" data-lance="4">
+          <div class="lance-img"><img src="assets/img/lance-limitado.png" alt=""></div>
+          <div class="lance-text">
+            <div class="badges"><span class="badge">Imóveis</span></div>
+            <h3>Lance Limitado</h3>
+            <div class="lance-cols">
+              <p>Ideal para quem quer disputar a contemplação em condições mais equilibradas, sem precisar competir com as ofertas muito altas de outros participantes.</p>
+              <p>O grupo define um teto de oferta e ninguém pode adiantar mais que esse limite. Assim a disputa fica parelha, e um lance alto não decide sozinho a assembleia.</p>
+            </div>
+            <a class="link-arrow" href="#">Saiba mais <svg class="ic ic-24" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+          </div>
+        </article>
+
+        <article class="lance" data-lance="5">
+          <div class="lance-img"><img src="assets/img/lance-fipe.png" alt=""></div>
+          <div class="lance-text">
+            <div class="badges"><span class="badge">Veículos</span></div>
+            <h3>Lance FIPE</h3>
+            <div class="lance-cols">
+              <p>Ideal para quem já tem um veículo e quer usá-lo como lance para ser contemplado, sem precisar de dinheiro guardado e sem passar por nenhuma burocracia.</p>
+              <p>Seu veículo vale como lance pelo preço da tabela FIPE, e esse valor sai do seu crédito. Não precisa apresentar documento do veículo nem comprovar nada depois.</p>
+            </div>
+            <a class="link-arrow" href="#">Saiba mais <svg class="ic ic-24" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== SIMULADOR CONSÓRCIO X EMPRÉSTIMO ==================== -->
+<section class="section section-dark" id="simulador">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">simulador de economia</p>
+      <h2 class="section-title title-vs"><span>Consórcio</span> <em>x</em> <span>Empréstimo</span></h2>
+      <p class="section-desc">Diferente do empréstimo, o consórcio não tem juros. Veja a comparação em tempo real e descubra quanto você economiza ao planejar fazendo um consórcio da Ademicon em vez de um empréstimo.</p>
+    </div>
+
+    <div class="comparador" id="comparador">
+      <div class="comp-inputs">
+        <div class="comp-tabs">
+          <button class="comp-tab is-active" data-produto="imoveis">
+            <svg class="ic ic-20" viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M9 22V12h6v10"/></svg>
+            <span>Imóveis</span>
+          </button>
+          <button class="comp-tab" data-produto="veiculos">
+            <svg class="ic ic-20" viewBox="0 0 24 24"><path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2"/><circle cx="7" cy="17" r="2"/><path d="M9 17h6"/><circle cx="17" cy="17" r="2"/></svg>
+            <span>Veículos</span>
+          </button>
+          <button class="comp-tab" data-produto="servicos">
+            <svg class="ic ic-20" viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+            <span>Serviços</span>
+          </button>
+        </div>
+
+        <div class="comp-group">
+          <p class="comp-label">Qual o <strong>valor</strong> do crédito que você precisa?</p>
+          <div class="comp-slider">
+            <input class="range range-dark" type="range" id="compValor" min="80000" max="1500000" step="10000" value="600000">
+            <input class="comp-output" id="compValorOut" type="text" inputmode="numeric" aria-label="Valor do crédito" value="R$ 600.000,00">
+          </div>
+        </div>
+
+        <div class="comp-group">
+          <p class="comp-label">Em quantos <strong>meses</strong> você pode pagar?</p>
+          <div class="comp-slider">
+            <input class="range range-dark" type="range" id="compPrazo" min="24" max="240" step="6" value="60">
+            <input class="comp-output comp-output-curto" id="compPrazoOut" type="text" inputmode="numeric" aria-label="Prazo em meses" value="60">
+          </div>
+        </div>
+      </div>
+
+      <div class="comp-results-wrap">
+        <div class="comp-results">
+          <div class="comp-row">
+            <div class="comp-row-left">
+              <svg class="ic ic-16 ic-green" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M16 12l-4-4-4 4"/><path d="M12 16V8"/></svg>
+              <div>
+                <p class="comp-row-title">Consórcio Ademicon</p>
+                <p class="comp-row-sub"><span class="green">Sem juros</span> Taxa de Admin. média</p>
+              </div>
+            </div>
+            <div class="comp-row-right">
+              <p class="comp-row-value" id="outConsorcioTotal">R$ 643.200</p>
+              <p class="comp-row-sub" id="outConsorcioMes">R$ 10.720,00/mês</p>
+            </div>
+          </div>
+
+          <div class="comp-row">
+            <div class="comp-row-left">
+              <svg class="ic ic-16 ic-red" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 8v8"/><path d="M8 12l4 4 4-4"/></svg>
+              <div>
+                <p class="comp-row-title">Empréstimo Bancário</p>
+                <p class="comp-row-sub">Aprox. 10.5% a.a. compostos</p>
+              </div>
+            </div>
+            <div class="comp-row-right">
+              <p class="comp-row-value" id="outEmprestimoTotal">R$ 773.778</p>
+              <p class="comp-row-sub" id="outEmprestimoMes">R$ 12.896,30/mês</p>
+            </div>
+          </div>
+
+          <div class="comp-savings">
+            <p>Economia Estimada</p>
+            <p class="comp-savings-value" id="outEconomia">R$ 130.578</p>
+          </div>
+        </div>
+
+        <button class="comp-download" id="btnBaixarSimulacao" type="button">
+          <svg class="ic ic-16" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="M7 10l5 5 5-5"/><path d="M12 15V3"/></svg>
+          Baixar Simulação
+        </button>
+      </div>
+    </div>
+
+    <div class="comp-cta">
+      <p>Tem interesse?</p>
+      <div class="comp-cta-row">
+        <a class="btn btn-outline btn-lg" href="#">Falar com especialista</a>
+        <a class="btn btn-primary btn-lg" href="#">Simule seu Consórcio</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== VANTAGENS ==================== -->
+<section class="section section-gray">
+  <div class="container vantagens">
+    <div class="vantagens-copy">
+      <p class="eyebrow">vantagens</p>
+      <h2 class="section-title">Ainda em dúvida entre consórcio ou financiamento?</h2>
+      <p>Você prefere uma compra planejada, sem precisar se comprometer com um valor de entrada e com custos menores, ou uma compra mais rápida, mas que também exige muito mais do seu bolso?</p>
+      <p>O consórcio respeita o seu planejamento financeiro, sem a imprevisibilidade que os financiamentos</p>
+    </div>
+
+    <div class="vantagens-cards" data-hscroll>
+      <article class="vcard">
+        <div class="vcard-head">
+          <h3>Financiamento</h3>
+          <img src="assets/img/vantagem-financiamento.png" alt="">
+        </div>
+        <div class="vcard-block vcard-block-bordered">
+          <span class="chip">Juros</span>
+          <p><strong class="red">Obrigatórios</strong> e com flutuação durante todo o contrato. Por isso, <strong>não se tem certeza dos valores</strong> a serem pagos a cada ano.</p>
+        </div>
+        <div class="vcard-block">
+          <span class="chip">Entrada</span>
+          <p><strong class="red">É exigida</strong> na maioria dos financiamentos.</p>
+        </div>
+      </article>
+
+      <article class="vcard">
+        <div class="vcard-head">
+          <h3>Consórcio</h3>
+          <img src="assets/img/vantagem-consorcio.png" alt="">
+        </div>
+        <div class="vcard-block vcard-block-bordered">
+          <span class="chip">juros</span>
+          <p><strong class="red">Não tem juros!</strong> A taxa administrativa, muito <strong>mais baixa que os juro,</strong> é apresentada na contratação, <strong>sem supresas!</strong></p>
+        </div>
+        <div class="vcard-block">
+          <span class="chip">Entrada</span>
+          <p><strong class="red">Não é necessário!</strong> Você guarda o dinheiro para aproveitar as chances de lances!</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== HISTÓRIAS ==================== -->
+<section class="section section-black">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">histórias</p>
+      <h2 class="section-title">Descubra outras conquistas</h2>
+      <p class="section-desc">Mais de 675 mil pessoas já passaram por aqui, cada uma com um objetivo diferente: uma casa, um negócio, um plano de família. Conheça algumas dessas histórias contadas por quem viveu.</p>
+    </div>
+
+    <div class="hscroll hscroll-stories" data-hscroll>
+      <article class="story">
+        <img src="assets/img/historia-1.jpg" alt="">
+        <span class="story-play" aria-hidden="true"></span>
+        <p>Um sonho que parecia distante... mas com planejamento, parceria e um consórcio no momento certo, Humberto e Lilian transformaram o desejo de serem pais em uma história real de conquista. ❤️</p>
+      </article>
+      <article class="story">
+        <img src="assets/img/historia-2.jpg" alt="">
+        <span class="story-play" aria-hidden="true"></span>
+        <p>Realizar um objetivo pode começar com uma conversa. O atendimento consultivo faz toda diferença para entender seu momento, possibilidades e o plano que funciona para você!</p>
+      </article>
+      <article class="story">
+        <img src="assets/img/historia-3.jpg" alt="">
+        <span class="story-play" aria-hidden="true"></span>
+        <p>Planejar também é saber investir no momento certo. Foi assim que Taiguara, da Green Station, transformou o consórcio em uma forma inteligente de conquistar patrimônio, para ele e para a empresa. 🚀</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== TUDO SOBRE A ADEMICON ==================== -->
+<section class="section section-gray">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">saiba mais</p>
+      <h2 class="section-title">Tudo sobre a Ademicon</h2>
+      <p class="section-desc">Carreiras, iniciativas e parcerias: fique por dentro de tudo que a Ademicon oferece para você, seus negócios e para a sociedade.</p>
+    </div>
+
+    <div class="hscroll hscroll-bleed" data-hscroll>
+      <article class="about-card">
+        <div class="about-card-img"><img src="assets/img/sobre-consultor.jpg" alt=""></div>
+        <div class="about-card-text">
+          <h3>Seja um Consultor</h3>
+          <p>Represente nossas soluções de crédito e abra a sua própria franquia de vendas.</p>
+        </div>
+      </article>
+      <article class="about-card">
+        <div class="about-card-img"><img src="assets/img/sobre-esportes.jpg" alt=""></div>
+        <div class="about-card-text">
+          <h3>Esportes</h3>
+          <p>Apoio e fomento a modalidades esportivas e patrocínio a atletas nacionais.</p>
+        </div>
+      </article>
+      <article class="about-card">
+        <div class="about-card-img"><img src="assets/img/sobre-corrente.jpg" alt=""></div>
+        <div class="about-card-text">
+          <h3>Corrente do Bem</h3>
+          <p>Ações humanitárias, campanhas sociais e investimentos comunitários.</p>
+        </div>
+      </article>
+      <article class="about-card">
+        <div class="about-card-img"><img src="assets/img/sobre-parcerias.jpg" alt=""></div>
+        <div class="about-card-text">
+          <h3>Parcerias</h3>
+          <p>A Ademicon expande a distribuição de consórcios por meio de marcas consolidadas no mercado.</p>
+        </div>
+      </article>
+      <article class="about-card">
+        <div class="about-card-img"><img src="assets/img/sobre-carreiras.jpg" alt=""></div>
+        <div class="about-card-text">
+          <h3>Carreiras</h3>
+          <p>Faça parte da nossa equipe interna nas sedes e núcleos operacionais da empresa.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== BLOG ==================== -->
+<section class="section section-white">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">BLOG</p>
+      <h2 class="section-title">Saiba mais no nosso Blog</h2>
+      <p class="section-desc">Leia artigos relacionados aos tipos de crédito da Ademicon.</p>
+    </div>
+
+    <div class="blog-grid" data-hscroll>
+      <article class="post-card">
+        <div class="post-card-img"><img src="assets/img/blog-1.jpg" alt=""></div>
+        <div class="post-card-text">
+          <p class="post-date">16 de Agosto de 2026</p>
+          <h3>Como usar seu imóvel quitado para alavancar o seu negócio</h3>
+          <p class="post-excerpt">Entenda como o Home Equity oferece as menores taxas e os maiores prazos do mercado para você investir pesado na sua empresa, sem se descapitalizar.</p>
+          <a class="link-arrow" href="#">Leia mais <svg class="ic ic-24" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+        </div>
+      </article>
+      <article class="post-card">
+        <div class="post-card-img"><img src="assets/img/blog-2.jpg" alt=""></div>
+        <div class="post-card-text">
+          <p class="post-date">16 de Agosto de 2026</p>
+          <h3>Dinheiro rápido na mão sem precisar vender o seu carro</h3>
+          <p class="post-excerpt">Descubra como funciona o refinanciamento de veículo: uma alternativa inteligente para conseguir crédito com juros baixos, mantendo o seu carro na garagem.</p>
+          <a class="link-arrow" href="#">Leia mais <svg class="ic ic-24" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+        </div>
+      </article>
+      <article class="post-card">
+        <div class="post-card-img"><img src="assets/img/blog-3.jpg" alt=""></div>
+        <div class="post-card-text">
+          <p class="post-date">16 de Agosto de 2026</p>
+          <h3>Cota Equity: como transformar o seu consórcio em liquidez imediata</h3>
+          <p class="post-excerpt">Precisa de crédito ágil? Saiba como usar o fundo comum já pago da sua cota Ademicon como garantia para liberar dinheiro rápido, direto pelo aplicativo</p>
+          <a class="link-arrow" href="#">Leia mais <svg class="ic ic-24" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== FOOTER ==================== -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="#" aria-label="Ademicon">
+          <img src="assets/img/logo-ademicon.svg" alt="Ademicon" width="176" height="40">
+        </a>
+        <p>A maior administradora independente de consórcio do Brasil.</p>
+      </div>
+
+      <div class="footer-news">
+        <p class="footer-news-title">cadastre-se na nossa Newsletter</p>
+        <form class="newsletter" onsubmit="return false;">
+          <input type="email" placeholder="Seu e-mail" aria-label="Seu e-mail">
+          <button type="submit">Assinar</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="footer-cols">
+      <div class="footer-col">
+        <p class="footer-col-title">Produtos</p>
+        <ul class="footer-list">
+          <li><a href="#">Imóveis</a></li>
+          <li><a href="#">Veículos</a></li>
+          <li><a href="#">Serviços</a></li>
+          <li><a href="#">Bens Móveis</a></li>
+          <li><a href="#">Agro</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <p class="footer-col-title">Institucional</p>
+        <ul class="footer-list footer-list-tight">
+          <li><a href="#">Quem Somos</a></li>
+          <li><a href="#">Sala de Imprensa</a></li>
+          <li><a href="#">Carreiras Corporativas</a></li>
+          <li><a href="#">Seja um Consultor</a></li>
+          <li><a href="#">Esportes</a></li>
+          <li><a href="#">Corrente do Bem</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-links">
+        <a href="#">parcerias</a>
+        <a href="#">sorteios e resultados</a>
+        <a href="#">blog</a>
+        <a href="#">ouvidoria</a>
+        <a href="#">balanços</a>
+        <a href="#">Regulamentos</a>
+      </div>
+    </div>
+
+    <p class="footer-copy">Copyright 2026 Ademicon. Todos os direitos reservados.</p>
+  </div>
+</footer>
+
+<script src="assets/js/script.js?v=20260910d"></script>
+</body>
+</html>

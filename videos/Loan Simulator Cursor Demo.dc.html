@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+/* Assets locais: evita depender de CDN (unpkg) em produção. */
+window.__resources = {
+  "https://unpkg.com/react@18.3.1/umd/react.production.min.js": "./vendor/react.production.min.js",
+  "https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js": "./vendor/react-dom.production.min.js",
+  "https://unpkg.com/@babel/standalone@7.29.0/babel.min.js": "./vendor/babel.min.js"
+};
+</script>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700;800&display=swap">
+  <link rel="stylesheet" href="./ds-styles.css">
+  <style>
+    body { margin: 0; }
+    /* Embed na home: sem chrome de player e sem sombra do palco. */
+    html, body { background: #F2F2F2 !important; }
+    [data-omelette-chrome] { display: none !important; }
+    [data-om-starter] { background: #F2F2F2 !important; }
+    :root { --color-bg: #F2F2F2; }
+    svg[data-om-exportable-video-with-duration-secs] { box-shadow: none !important; }
+  </style>
+  <script>window.OM_SCENES = '[{"name":"Abertura","dur":1,"desc":"Estado inicial, valores padrão"},{"name":"AjustarCredito","dur":2,"desc":"O slider de crédito é arrastado até 130.000"},{"name":"AjustarParcela","dur":1.8,"desc":"O slider de parcela desce até 1.150"},{"name":"Clicar","dur":1.4,"desc":"O botão Solicitar Crédito é acionado"},{"name":"Flip","dur":0.9,"desc":"A tela vira em 3D revelando o verso"},{"name":"Concluido","dur":2,"desc":"Verso da tela: solicitação concluída"},{"name":"FlipBack","dur":0.9,"desc":"A tela vira de volta para a frente"}]';</script>
+  <script>window.OM_PLAYBACK = '{"mode":"loop"}';</script>
+  <script>window.TWEAK_DEFAULTS = /*EDITMODE-BEGIN*/{
+    "motionEditor": false,
+    "tiltEnabled": true,
+    "darkBackdrop": false
+  }/*EDITMODE-END*/;</script>
+</helmet>
+<x-import component-from-global-scope="LoanSimApp" from="./animations-v3.jsx ./tweaks-panel.jsx ./loan-scene.jsx" hint-size="1440,1080" style="width:100%;height:100%;display:block;"></x-import>
+</x-dc>
+</body>
+</html>
