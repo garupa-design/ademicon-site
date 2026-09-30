@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lato:wght@400;600&family=Open+Sans:wght@700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/styles.css?v=20260910d">
+<link rel="stylesheet" href="assets/css/styles.css?v=20260929a">
 </head>
 <body>
 
@@ -542,6 +542,52 @@
   </div>
 </section>
 
+<!-- ==================== ADEMICON EM TODO BRASIL (lojas + globo) ==================== -->
+<section class="section section-dark lojas" id="lojas" aria-labelledby="lojasTitulo">
+  <div class="container lojas-grid">
+    <div class="lojas-copy">
+      <h2 class="lojas-title" id="lojasTitulo"><span>A Ademicon</span> está em todo Brasil</h2>
+      <p class="lojas-desc" id="lojasResumo">São <strong>mais de 300 lojas</strong> em <strong>24 estados</strong> e no <strong>Distrito Federal</strong>. Encontre a Ademicon mais próxima de você.</p>
+    </div>
+
+    <div class="lojas-filtros">
+      <div class="field">
+        <label class="field-label" for="lojasEstado">Estado</label>
+        <div class="input-wrapper">
+          <select id="lojasEstado">
+            <option value="">Selecione</option>
+          </select>
+          <svg class="ic ic-16" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
+        </div>
+      </div>
+      <div class="field">
+        <label class="field-label" for="lojasCidade">Cidade</label>
+        <div class="input-wrapper">
+          <select id="lojasCidade" disabled>
+            <option value="">Selecione o estado</option>
+          </select>
+          <svg class="ic ic-16" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
+        </div>
+      </div>
+      <button type="button" class="lojas-geo" id="lojasGeo">
+        <svg class="ic ic-16" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/><circle cx="12" cy="12" r="7"/></svg>
+        Usar minha localização
+      </button>
+    </div>
+
+    <div class="lojas-globo" id="lojasGlobo">
+      <div class="lojas-globo-canvas" id="lojasGloboCanvas" role="img" aria-label="Globo terrestre com as cidades que têm lojas Ademicon"></div>
+      <div class="lojas-tooltip" id="lojasTooltip" hidden></div>
+      <p class="lojas-globo-dica">Arraste para girar ou toque em uma cidade</p>
+    </div>
+
+    <div class="lojas-resultado">
+      <p class="lojas-contagem" id="lojasContagem" aria-live="polite">Escolha um estado para ver as lojas.</p>
+      <ul class="lojas-lista" id="lojasLista"></ul>
+    </div>
+  </div>
+</section>
+
 <!-- ==================== BLOG ==================== -->
 <section class="section section-white">
   <div class="container">
@@ -642,5 +688,7 @@
 </footer>
 
 <script src="assets/js/script.js?v=20260910d"></script>
+<script src="assets/js/lojas-data.js?v=20260929a"></script>
+<script src="assets/js/lojas.js?v=20260929a"></script>
 </body>
 </html>
